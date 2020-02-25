@@ -24,6 +24,8 @@ enum error_code {
   UNESCAPED_CHARS, // found unescaped characters in a string.
   UNCLOSED_STRING, // missing quote at the end
   UNSUPPORTED_ARCHITECTURE, // unsupported architecture
+  INCORRECT_TYPE, // JSON element has a different type than user expected
+  NUMBER_OUT_OF_RANGE, // JSON number does not fit in 64 bits
   UNEXPECTED_ERROR // indicative of a bug in simdjson
 };
 
